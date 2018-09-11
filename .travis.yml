@@ -13,8 +13,8 @@ cache:
     - node_modules
 
 script:
-  - npm lint
-  - npm build --base-href https://cnd5041.github.io/code-jam/
+  - npm run lint
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
