@@ -12,12 +12,9 @@ cache:
   directories:
     - node_modules
 
-install:
-  - npm install -g yarn
-
 script:
-  - yarn lint
-  - yarn build --base-href https://cnd5041.github.io/code-jam/
+  - npm lint
+  - npm build --base-href https://cnd5041.github.io/code-jam/
 deploy:
   provider: pages
   skip_cleanup: true
