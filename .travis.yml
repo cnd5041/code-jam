@@ -17,11 +17,11 @@ install:
 
 script:
   - yarn lint
-  - yarn build --base-href https://[ your github username ].github.io/my-awesome-project/
+  - yarn build --base-href https://cnd5041.github.io/code-jam/
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/my-awesome-project
+  local_dir: dist/code-jam
   on:
     branch: master
